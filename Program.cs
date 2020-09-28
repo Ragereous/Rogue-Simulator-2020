@@ -23,9 +23,10 @@ namespace Choose_Your_Class
                 switch (gameMenuOption)
                 {
                     case "1":
+                        Console.WriteLine("\nPlease enter your new Specialization!\n");
                         string specialization = Console.ReadLine();
                         rogue.SetSpecialization(specialization);
-                        Console.WriteLine($"Your Specialization is now {rogue.GetSpecialization()}.");
+                        Console.WriteLine($"\nYour Specialization is now '{rogue.GetSpecialization()}'.\n");
                         rogue.Continue();
                         break;
                     case "2":
